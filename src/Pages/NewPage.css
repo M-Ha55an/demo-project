@@ -1,0 +1,34 @@
+.d-table{
+width: 45vw;
+height: 50vh;
+}
+
+/* NewPage.css */
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    left: 18rem;
+    bottom: 5rem;
+   }
+   
+   .loading::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #000;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+   }
+   
+   @keyframes spin {
+    to {
+       transform: rotate(360deg);
+    }
+   }
+   

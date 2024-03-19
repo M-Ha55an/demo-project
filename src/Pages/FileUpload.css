@@ -1,0 +1,37 @@
+.square {
+    height: 60vh;
+    width: 80vw;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.browse-btn {
+    width: 8rem;
+}
+
+.p-table{
+    width: 50rem;
+    height: 15rem;
+}
+
+.input-field {
+    width: 80vw;
+}
+
+.upload-btn {
+    width: 8rem;
+    position: absolute;
+    right: 6rem;
+    bottom: 3rem;
+}
+
+.upload-status {
+    margin-top: 1rem;
+    color: #007bff; /* Blue color for success message */
+    font-weight: bold;
+   }
+   
