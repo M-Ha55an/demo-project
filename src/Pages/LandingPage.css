@@ -6,8 +6,7 @@
     justify-content: space-around;
 }
 
-.hbutton {
-    background-color: rgb(244, 206, 20);
+.hbtn {
     border: none;
     color: grey;
     padding: 10px 20px;
@@ -17,11 +16,14 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 0px 12px 0px 12px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 35px;
 }
 
 .headings{
     font-family: 'Inter', sans-serif;
-    line-height: 16px;
+    margin: 60px 0px 0px 75px;
 }
 
 .headings h1 {
@@ -29,11 +31,75 @@
     font-size: 90px;
 }
 
-.headings p{
-    font-size: 20px;
+.headings p {
+    font-size: 31px;
+    width: 504px;
+    line-height: 35px;
 }
 
 .img {
     height: 25rem;
     width: 35rem;
+}
+
+.about{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.about h4{
+    font-size: 30px;
+}
+
+.about p{
+    padding: 0 180px 0 180px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.hero-two{
+    margin-top: 130px;
+}
+
+.sec-img {
+    height: 25rem;
+    width: 30rem;
+    border-radius: 5px;
+    margin-left: 130px;
+}
+
+.para {
+    margin-inline: 190px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 23px;
+}
+
+.features{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.features h4{
+    font-size: 30px;
+}
+
+.features p{
+    padding: 0 180px 0 180px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.cards {
+    line-height: 30px;
+    text-align: center;
+    margin-top: 70px;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
 }

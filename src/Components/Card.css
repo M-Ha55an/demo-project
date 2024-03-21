@@ -1,0 +1,14 @@
+.card {
+    width: 300px; /* Set the desired width */
+    height: 250px; /* Set the desired height */
+}
+
+.card-title{
+    font-size: 25px;
+}
+
+.card-text{
+    margin-top: 20px;
+    font-size: 18px;
+    justify-content: space-around;
+}
