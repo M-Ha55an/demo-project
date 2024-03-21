@@ -1,6 +1,13 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './NewPage.css';
+import loading from "../images/Loading.gif"
+import Header from '../Components/Header';
+import Footern from '../Components/Footern';
+
+
+
+
 
 export default function NewPage() {
  const location = useLocation();
@@ -10,10 +17,14 @@ export default function NewPage() {
     console.log(filePreview);
  }, [filePreview]);
 
- return (
-    <div className='d-flex'>
+  return (
+    <div>
+      <Header/>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-6 mt-3' style={{ border: '2px solid #2B3759', borderRadius: '10px' , width:'49%'}}>
         {filePreview.length > 0 && (
-          <div className="table-responsive m-5">
+          <div className="table-responsive m-5" style={{height:'299px'}}>
             <table className="table table-striped table-bordered d-table">
               <thead className="thead-dark">
                 <tr>
@@ -33,8 +44,13 @@ export default function NewPage() {
               </tbody>
             </table>
           </div>
-         )}
-         <div className="loading"></div>
-    </div>
+            )}
+          </div>
+          <div className='col-6 mt-3 sc-two' style={{ border: '2px solid #2B3759', borderRadius: '10px', width:'49%'}}>
+          <img src={loading} alt="Loading" className="gif" />          </div>
+     </div>
+      </div>
+     <Footern/>
+      </div>
  );
 }
