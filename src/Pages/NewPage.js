@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './NewPage.css';
 import loading from "../images/Loading.gif"
-import Header from '../Components/Header';
+import Headern from '../Components/Headern';
 import Footern from '../Components/Footern';
 
 
@@ -19,12 +19,12 @@ export default function NewPage() {
 
   return (
     <div>
-      <Header/>
+      <Headern/>
       <div className='container'>
         <div className='row'>
           <div className='col-6 mt-3' style={{ border: '2px solid #2B3759', borderRadius: '10px' , width:'49%'}}>
         {filePreview.length > 0 && (
-          <div className="table-responsive m-5" style={{height:'299px'}}>
+          <div className="table-responsive m-3" style={{height:'299px'}}>
             <table className="table table-striped table-bordered d-table">
               <thead className="thead-dark">
                 <tr>

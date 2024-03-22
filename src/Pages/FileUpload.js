@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import './FileUpload.css';
 import { useNavigate } from 'react-router-dom';
 import { read, utils } from 'xlsx';
-import Header from '../Components/Header';
+import Headern from '../Components/Headern';
 import Footer from '../Components/Footer';
 
 function FileUpload() {
@@ -55,7 +55,7 @@ function FileUpload() {
 
  return (
    <div className='d-flex justify-content-center align-items-center flex-column'>
-     <Header/>
+     <Headern/>
       <div className="square mt-5" onClick={handleBrowseClick}>
         {selectedFile && (
           <>

@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './LandingPage.css'
 import Header from '../Components/Header'
 import roboimage from '../images/RoboImage.png'
 import img from '../images/Img.jpeg'
 import Card from '../Components/Card'
+import logo from '../images/ai-agent-logo-white.png'
 
 export default function LandingPage() {
         const cardData = [
@@ -28,13 +30,15 @@ export default function LandingPage() {
                   <h1>Excel AI Agent</h1>
                   <p>Revolutionizing File Alteration and 
                       Prompt Generation</p>
-                      <button className="hbtn">Request For a Demo</button> 
+                      <Link to="/file-upload">
+        <button className="hbtn">Request For a Demo</button>
+      </Link>
               </div>
               <div className="">
                   <img src={roboimage} className='img' alt="" />
               </div>
           </div>
-          <div className="about">
+          <div className="about" id="about">
               <h4>About</h4>
               <p>Experience seamless Excel file manipulation and prompt generation with our Excel AI Wizard. Effortlessly create new, altered files with precision, guided by intelligent input prompts. Elevate productivity with streamlined workflows and intuitive tools, revolutionizing your Excel experience.</p>
           </div>
@@ -48,7 +52,7 @@ export default function LandingPage() {
 splitting, or rearranging sheets, columns, or rows, our tool simplifies the process with effortless drag-and-drop functionality. Additionally, our smart input prompting feature guides your data entry, ensuring accuracy and efficiency in every task. With our Excel AI Wizard, you can unlock valuable insights, make informed decisions, and transform your Excel experience like never before.</p>
               </div>
           </div>
-          <div className="features">
+          <div className="features" id='features'>
               <h4>Features</h4>
               <p>Our Excel AI Wizard empowers effortless Excel file manipulation with features like seamless merging, splitting, and rearranging of data. Generate insightful prompts based on your data to make informed decisions and uncover valuable insights. Experience unparalleled versatility and functionality for enhanced productivity in just a few clicks.</p>
           </div>
@@ -57,6 +61,22 @@ splitting, or rearranging sheets, columns, or rows, our tool simplifies the proc
           <Card key={index} title={card.title} paragraph={card.paragraph} />
         ))}
       </div>
+      <div className="bar-one d-flex">
+        <p>Experience unparalleled versatility and 
+          functionality for enhanced productivity in just a few clicks.</p>
+        <Link to="/file-upload">
+        <button className="bar-btn">Request For a Demo</button>
+      </Link>
+      </div>
+      <footer className='landing-footer'>
+        <div className="f-logo">
+          <img src={logo} alt="" />
+        </div>
+        <div className="f-p">
+        <div className="f-p1">© Pace Technologies (Pvt.) Ltd</div>
+          <div className="f-p2">2024 All Rights Reserved.</div>
+          </div>
+</footer>
     </div>
   )
 }

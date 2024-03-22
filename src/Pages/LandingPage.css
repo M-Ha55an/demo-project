@@ -4,7 +4,9 @@
     background-color: rgb(245, 247, 248);
     display: flex;
     justify-content: space-around;
+   
 }
+
 
 .hbtn {
     border: none;
@@ -43,6 +45,7 @@
 }
 
 .about{
+    color: rgb(0, 0, 0, 0.898);
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
@@ -50,6 +53,7 @@
     align-items: center;
     margin-top: 50px;
 }
+
 .about h4{
     font-size: 30px;
 }
@@ -79,6 +83,7 @@
 }
 
 .features{
+    color: #000000e5;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
@@ -97,9 +102,56 @@
 }
 
 .cards {
+    flex-wrap: wrap;
     line-height: 30px;
     text-align: center;
     margin-top: 70px;
     justify-content: space-around;
     background-color: rgb(255, 255, 255);
+}
+
+.bar-one {
+    justify-content: space-around;
+    background-color: #495e57;
+    color: white;
+    margin-top: 200px;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.bar-btn {
+    background-color: rgb(244, 206, 20);
+    border: none;
+    color: grey;
+    padding: 10px 20px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px 12px 0px 12px;
+}
+.f-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.f-logo img{
+    height: 100px;
+    width: 160px;
+}
+.f-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    color: white;
+}
+.landing-footer{
+    margin-top: 50px;
+    background-color: rgb(69, 71, 75);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
