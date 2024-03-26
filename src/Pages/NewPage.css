@@ -46,3 +46,10 @@ th{
    .sc-two{
       margin-left: 22px;
    }
+
+   .back-btn{
+      position: absolute;
+      left: 44.5%;
+      width: 10rem;
+      top: 30rem;
+   }

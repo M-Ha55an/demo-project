@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation , Link } from 'react-router-dom';
 import './NewPage.css';
 import loading from "../images/Loading.gif"
 import Headern from '../Components/Headern';
@@ -50,6 +50,9 @@ export default function NewPage() {
           <img src={loading} alt="Loading" className="gif" />          </div>
      </div>
       </div>
+      <Link to="/file-upload">
+        <button type="button" className="btn btn-secondary back-btn">Back</button>
+        </Link>
      <Footern/>
       </div>
  );
